@@ -1,0 +1,121 @@
+
+:root {
+    --color-primario:#FFE699;
+    --color-secundario:#FFF9B6;
+    --color-terciario:#FF9292;
+    --color-cuarto:#FFCCD2;
+    /*font */
+    --ff-primario:font-family: 'Oswald', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--color-primario);
+}
+
+header {
+    background: white;
+}
+
+header > h1 {
+    color:var(--color-secundario);
+    background-color: var(--color-terciario);
+    text-align: center;
+    font-family: var(--ff-primario);
+}
+.score-board {
+    margin: 20px auto;
+    border: 3px solid var(--color-cuarto);
+    width: 200px;
+    color: var(--color-cuarto);
+    font-size: 46px;
+    background-color: var(--color-secundario);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    text-align: center;
+    padding: 15px 20px;
+    font-family: var(--ff-primario);
+    position: relative;
+}
+.badge {
+    background:var(--color-terciario);
+    color: var(--color-secundario);
+    font-size: 14px;
+    padding: 2px 10px;
+    font-family: var(--ff-primario);
+}
+#user-label{
+    position: absolute;
+    top: 30px;
+    left: -25px;
+
+}
+#computer-label{
+    position: absolute;
+    top: 30px;
+    right: -30px;
+
+}
+.result {
+ font-size: 40px;
+ color: var(--color-terciario);
+}
+.result > p {
+    text-align: center;
+    font-weight: bold;
+    font-family: var(--ff-primario);
+
+}
+.choices {
+
+    margin:50px;
+    text-align: center;
+}
+.choice {
+    border: 4px solid var(--color-terciario);
+    border: radius 50%;
+    -webkit-border-radius:50% ;
+    -moz-border-radius:50% ;
+    -ms-border-radius:50% ;
+    -o-border-radius:50% ;
+    margin: 0 20px;
+    padding: 10px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background: var(--color-secundario);
+}
+#action-message {
+    text-align: center;
+    color: var(--color-terciario);
+    font-family: var(--ff-primario);
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.green-glow {
+    border: 4px solid #4dcc7d;
+    box-shadow: 0 0 10px #31b43a;
+}
+.red-glow {
+    border:4px solid #fc121b;
+    box-shadow: 0 0 10 #d01115;
+}
+.gray-glow {
+    border: 4px solid #464647;
+    box-shadow: 0 0 10px #25292b;
+}
